@@ -1,10 +1,11 @@
+name: release-please
 on:
   push:
     branches:
       - main
-name: release-please
 jobs:
-  release-please:
+  release_please:
+    name: Automated Release
     runs-on: ubuntu-latest
     steps:
       - uses: GoogleCloudPlatform/release-please-action@v2
