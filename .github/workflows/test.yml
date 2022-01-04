@@ -1,0 +1,22 @@
+name: Run all feat branches
+on:
+  push:
+    branches:
+      - '*'
+      - '*/*'
+      - '**'
+      - '!main'
+jobs:
+  test-all:
+    name: Unit Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: GoogleCloudPlatform/release-please-action@v2
+        id: release
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          command: manifest
+          path: sub-repo1
+          monorepo-tags: true
+      - uses: actions/checkout@v2
+        if: ${{ steps.release.outputs.releases_created }}
