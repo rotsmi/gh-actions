@@ -5,3 +5,6 @@ def test_suma():
 
 def test_capital_case():
     assert capital_case('semaphore') == 'Semaphore'
+
+def test_failed_capital_case():
+    assert capital_case('semaphore') != 'semaphore'
