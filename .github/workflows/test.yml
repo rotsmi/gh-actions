@@ -1,20 +1,16 @@
-name: release-please
+name: Run all feat branches
 on:
   push:
     branches:
-      - main
+      - '*'
+      - '*/*'
+      - '**'
+      - '!main'
 jobs:
-  release_please:
-    name: Automated Release
+  test-all:
+    name: Unit Test
     runs-on: ubuntu-latest
     steps:
-      - uses: GoogleCloudPlatform/release-please-action@v3
-        id: release
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          command: manifest
-          path: sub-repo1
-          monorepo-tags: true
       - name: Check out repo
         uses: actions/checkout@v2
 
@@ -33,3 +29,4 @@ jobs:
         run: |
           pytest --exitfirst --verbose --failed-first \
           --cov=. --cov-report html
+
