@@ -13,7 +13,6 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           command: manifest
-          path: sub-repo1
           monorepo-tags: true
       - name: Check out repo
         uses: actions/checkout@v2
