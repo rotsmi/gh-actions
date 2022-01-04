@@ -11,12 +11,14 @@ jobs:
     name: Unit Test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        if: ${{ steps.release.outputs.releases_created }}
+      - name: Check out repo
+        uses: actions/checkout@v2
+
       - name: Set up Python 3.8
         uses: actions/setup-python@v2
         with:
           python-version: 3.8
+
       - name: Install Python dependencies
         run: |
           sudo apt install -y $(grep -o ^[^#][[:alnum:]-]* "packages.list")
@@ -25,5 +27,5 @@ jobs:
 
       - name: Test with pytest
         run: |
-          pytest --exitfirst --verbose --failed-first \
-          --cov=. --cov-report html
+          pytest --exitfirst --verbose \
+          --failed-first
