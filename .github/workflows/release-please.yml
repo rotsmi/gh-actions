@@ -8,8 +8,8 @@ jobs:
     name: Automated Release
     runs-on: ubuntu-latest
     steps:
-      - uses: GoogleCloudPlatform/release-please-action@v3
-        id: release
+      - name: release-please-action
+        uses: google-github-actions/release-please-action@v3.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           command: manifest
