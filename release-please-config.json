@@ -2,5 +2,6 @@
   "packages": {
     "sub-repo1": {}
   },
-  "release-type": "python"
+  "release-type": "python",
+  "release-as": "1.4.0"
 }
