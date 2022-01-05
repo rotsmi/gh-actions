@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.6.0](https://github.com/rotsmi/gh-actions/compare/v1.5.2...v1.6.0) (2022-01-05)
+
+
+### Features
+
+* adding test ([9fc9642](https://github.com/rotsmi/gh-actions/commit/9fc964218082d27e49e06afc130198f4ea5360a3))
+
+
+### Bug Fixes
+
+* add more test ([03c3f36](https://github.com/rotsmi/gh-actions/commit/03c3f36dbf636571621b1d7b59139d8ac3390887))
+* add more test ([03c3f36](https://github.com/rotsmi/gh-actions/commit/03c3f36dbf636571621b1d7b59139d8ac3390887))
+* add more test ([788311e](https://github.com/rotsmi/gh-actions/commit/788311e09bfd4c7703938efc264b265a490b5bad))
+* add more test ([#21](https://github.com/rotsmi/gh-actions/issues/21)) ([f5870a2](https://github.com/rotsmi/gh-actions/commit/f5870a2e7f9e5edd7ef8bf28ab708133b53b80db))
+
 ### [1.5.2](https://github.com/rotsmi/gh-actions/compare/v1.5.1...v1.5.2) (2022-01-05)
 
 
