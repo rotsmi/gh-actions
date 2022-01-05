@@ -5,6 +5,7 @@ def test_addition():
 
 def test_more_addition():
     assert addition(40,10) == 50
+    assert addition(10,10) == 20
 
 def test_addition_fail():
     assert addition(10,10) != 21
