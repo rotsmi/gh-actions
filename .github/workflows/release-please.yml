@@ -12,7 +12,6 @@ jobs:
         uses: google-github-actions/release-please-action@v3.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          command: manifest
           monorepo-tags: true
       - name: Check out repo
         uses: actions/checkout@v2
