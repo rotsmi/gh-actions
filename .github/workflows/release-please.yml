@@ -13,6 +13,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           monorepo-tags: true
+          release-type: python
       - name: Check out repo
         uses: actions/checkout@v2
 
