@@ -14,3 +14,6 @@ def test_capital_case_v2():
 
 def test_failed_capital_case():
     assert capital_case('semaphore') != 'semaphore'
+
+def test_success_capital_case():
+    assert capital_case('capital') == 'Capital'
