@@ -10,6 +10,7 @@ jobs:
     steps:
       - name: release-please-action
         uses: google-github-actions/release-please-action@v3.0.0
+        id: release
         with:
           monorepo-tags: true
           release-type: python
@@ -29,6 +30,7 @@ jobs:
           pip3 install -r requirements.txt
 
       - name: Test with pytest
+        if: ${{ steps.release.outputs.release_created }}
         run: |
           pytest --exitfirst --verbose --failed-first \
           --cov=. --cov-report html
