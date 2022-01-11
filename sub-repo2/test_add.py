@@ -10,5 +10,5 @@ def test_more_addition():
 def test_addition_fail():
     assert addition(10,10) != 21
 
-    def test_addition_success():
-        assert addition(10,20) == 30
+def test_addition_success():
+    assert addition(10,20) == 30

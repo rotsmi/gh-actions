@@ -1,7 +1,0 @@
-{
-  "packages": {
-    "sub-repo1": {},
-    "sub-repo2": {}
-  },
-  "release-type": "python"
-}
