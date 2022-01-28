@@ -17,3 +17,6 @@ def test_failed_capital_case():
 
 def test_success_capital_case():
     assert capital_case('capital') == 'Capital'
+
+def test_success_capital_case_one():
+    assert capital_case('one') == 'One'
